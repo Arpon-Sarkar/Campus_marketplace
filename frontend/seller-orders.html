@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller Orders | Campus Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><span>Campus</span> Marketplace</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="orders.html">My Orders</a>
+      <a href="seller-orders.html" class="nav-btn">Seller Orders</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="profile.html">Profile</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Received Product Orders</h1>
+    <p>Approve or reject product orders received for items you posted. Buyer phone and address appear only after approval.</p>
+  </section>
+
+  <section class="action-strip">
+    <div>
+      <h2>Seller Control Center</h2>
+      <p>Use this page for product order approvals. Service approvals are managed separately.</p>
+    </div>
+    <a href="service-orders.html" class="secondary-btn">Received Service Orders</a>
+    <a href="add-product.html" class="primary-btn">Post New Product</a>
+  </section>
+
+  <section class="card-grid" id="sellerOrderList">
+    <p>Loading received orders...</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

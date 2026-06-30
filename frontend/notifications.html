@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications | Campus Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><span>Campus</span> Marketplace</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="orders.html">My Orders</a>
+      <a href="seller-orders.html">Seller Orders</a>
+      <a href="notifications.html" class="nav-btn">Notifications</a>
+      <a href="profile.html">Profile</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Notifications</h1>
+    <p>Track admin approval, order, payment, booking, product, service, and review updates.</p>
+  </section>
+
+  <section class="card-grid" id="notificationList">
+    <p>Loading notifications...</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

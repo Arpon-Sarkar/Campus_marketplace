@@ -1,0 +1,44 @@
+CAMPUS MARKETPLACE - START HERE
+
+1) Open backend folder correctly in CMD:
+   cd /d E:\Tazmina\Project\campus-marketplace\backend
+
+2) Install and start backend:
+   npm install
+   npm start
+
+3) Database:
+   Fresh setup: import database/campus_marketplace.sql in phpMyAdmin.
+   Keeping old data: import database/upgrade_existing_database.sql once, then use the updated files.
+
+4) Open frontend:
+   frontend/index.html
+   Better: open frontend folder with VS Code Live Server.
+
+Default admin:
+Email: admin@vu.edu.bd
+Password: admin123
+
+Important page meanings:
+- Products = browse/buy products
+- Services = browse/book services
+- My Product Orders = products I ordered
+- Received Product Orders = orders for products I posted; seller approves/rejects here
+- My Service Bookings = services I booked
+- Received Service Orders = bookings for services I posted; provider approves/rejects here
+- Notifications = click a notification to open the related page
+
+Payment methods are simplified:
+- Product orders: Cash on Delivery or bKash
+- Service bookings: Cash or bKash
+- Notes are optional
+
+
+FIX INCLUDED: Cash service bookings now have Mark Payment Paid / Mark Payment Unpaid controls after provider approval.
+
+LATEST UPDATE STEPS:
+- If using old database, import database/upgrade_existing_database.sql once.
+- Product and service images are optional and must be under 2 MB.
+- Admin actions now send admin verification from the frontend.
+- Default admin remains admin@vu.edu.bd / admin123.
+- Existing old passwords still work; they become secured automatically after login.

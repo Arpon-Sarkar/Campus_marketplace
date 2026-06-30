@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Campus Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>Campus</span> Marketplace
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="register.html" class="btn-primary active-link">Register</a>
+    </nav>
+  </header>
+
+  <section class="auth-section">
+    <div class="auth-card">
+      <h2>Create Account</h2>
+      <p class="auth-subtitle">Join the campus marketplace and skill exchange platform.</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">University Email</label>
+          <input type="email" id="email" placeholder="example@vu.edu.bd" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" placeholder="01XXXXXXXXX" required />
+        </div>
+
+        <div class="form-group">
+          <label for="studentId">VU Student ID / Campus ID</label>
+          <input type="text" id="studentId" placeholder="Example: VU-XXXX" required />
+        </div>
+
+        <div class="form-group">
+          <label for="department">Department</label>
+          <input type="text" id="department" placeholder="Example: CSE" required />
+        </div>
+
+        <div class="form-group">
+          <label for="semester">Semester</label>
+          <input type="text" id="semester" placeholder="Example: 7th" required />
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="idCardFront">ID Card Front Image</label>
+            <input type="file" id="idCardFront" accept="image/*" capture="environment" required />
+            <small class="muted">Required. Upload or capture the front side. Max 2 MB.</small>
+          </div>
+          <div class="form-group">
+            <label for="idCardBack">ID Card Back Image</label>
+            <input type="file" id="idCardBack" accept="image/*" capture="environment" required />
+            <small class="muted">Required. Upload or capture the back side. Max 2 MB.</small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="role">Select Role</label>
+          <select id="role" required>
+            <option value="">Choose your role</option>
+            <option value="student">Student</option>
+            <option value="seller">Seller</option>
+            <option value="service_provider">Service Provider</option>
+          </select>
+        </div>
+
+        <button type="submit" class="primary-btn full-btn">Register</button>
+      </form>
+
+      <div id="otpBox" style="display:none; margin-top:20px;">
+        <h3>Verify Phone Number</h3>
+        <p class="muted">
+          For this project demo, the OTP is shown below. In a real SMS system, this code would be sent to the phone number.
+        </p>
+
+        <div class="demo-otp-card">Demo OTP: <strong id="demoOtpText">------</strong></div>
+
+        <div class="form-group">
+          <label for="otpInput">OTP Code</label>
+          <input type="text" id="otpInput" placeholder="Enter 6-digit OTP" />
+        </div>
+
+        <button type="button" class="primary-btn full-btn" onclick="verifyPhoneOtp()">
+          Verify Phone
+        </button>
+      </div>
+
+      <p class="auth-footer">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
